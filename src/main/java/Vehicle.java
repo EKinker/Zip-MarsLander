@@ -37,20 +37,20 @@ public class Vehicle {
         if (this.Altitude <= 0) {
             if (this.Velocity > 10) {
                 s = dead;
-                Flying = DEAD;
+                this.Flying = DEAD;
             }
             if (this.Velocity < 10 && this.Velocity > 3) {
                 s = crashed;
-                Flying = CRASHED;
+                this.Flying = CRASHED;
             }
             if (this.Velocity < 3) {
                 s = success;
-                Flying = SUCCESS;
+                this.Flying = SUCCESS;
             }
         } else {
             if (this.Altitude > 0) {
                 s = emptyfuel;
-                Flying = EMPTYFUEL;
+                this.Flying = EMPTYFUEL;
             }
         }
         return s;
@@ -76,12 +76,12 @@ public class Vehicle {
 
     public boolean stillFlying() {
         // return true if altitude is positive
-        return (Altitude >= 0);
+        return (Altitude > 0);
     }
 
     public boolean outOfFuel() {
         // return true if fuel is less than or equal to zero
-        return Fuel >=0;
+        return Fuel <=0;
     }
 
     public DescentEvent getStatus(int tick) {

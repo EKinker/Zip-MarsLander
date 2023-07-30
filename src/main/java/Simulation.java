@@ -29,8 +29,8 @@ public class Simulation {
     public String getHeader() {
         String s = "";
         s = s + "\nTime\t";
-        s = s + "Velocity\t\t"; s = s + "Fuel\t\t";
-        s = s + "Altitude\t\t"; s = s + "Burn\n";
+        s = s + "Velocity\t"; s = s + "Fuel\t\t";
+        s = s + "Altitude\t"; s = s + "Burn\n";
         s = s + "----\t";
         s = s + "-----\t\t";
         s = s + "----\t\t";
@@ -40,7 +40,7 @@ public class Simulation {
 
 
     public void printString(String string) {
-// print long strings with new lines the them.
+// print long strings with new lines the them.   //??? what
     String[] a = string.split("\r?\n");
         for (String s : a) {
             System.out.println(s);
@@ -66,6 +66,7 @@ public class Simulation {
             }
         }
         printString(vehicle.checkFinalStatus());
+        status = vehicle.getStatus(burnInterval);
         if (status != null) {
             return status.getStatus();
         }
