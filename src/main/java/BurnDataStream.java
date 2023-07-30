@@ -11,7 +11,7 @@ public class BurnDataStream implements BurnStream {
         this.burnArray = burns;
     }
     @Override
-    public int getNextBurn(DescentEvent status) {
+    public int getNextBurn(DescentEvent status) {  //why are we taking in the status? and what do we do with it here
         if (burnIdx < burnArray.length) {
             burnIdx++;
             System.out.println(burnArray[burnIdx]); /*hack!*/

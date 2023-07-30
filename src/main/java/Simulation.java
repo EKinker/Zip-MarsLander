@@ -7,11 +7,11 @@ public class Simulation {
     // Mars Simulation Source Code.
     static String version = "2.0"; /* The Version of the program */
 
-    public static int randomaltitude() {
+    public static int randomAltitude() {
         int max = 20000;
         int min = 10000;
         int r = (int)(Math.random() * (max - min)) + min;
-        return (r % 15000 + 4000);
+        return (r % 15000 + 4000);  // Where are we getting these numbers from?
     }
 
 
