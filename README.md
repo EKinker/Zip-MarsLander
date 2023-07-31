@@ -138,7 +138,7 @@ You may need to dig up some high school physics to figure this out.
 
 Hint: `a = (speed * speed)/(2 * altitude)`
 
-And remember, you brun zero kilos of fuel to increase descent speed by 100 m/s.
+And remember, you burn zero kilos of fuel to increase descent speed by 100 m/s.
 You burn 100 kilos of fuel to maintain your current descent speed.
 You Burn 200 kilos of fuel to reduce you descent speed by 100 m/s.
 
