@@ -23,7 +23,7 @@ public class SimulationTest {
         int okay = game.runSimulation(burnSource);
         //Sorry test.  If you drop your ship from orbit and never burn, you're going to make a crater on the surface of Mars.  No one is walking away with a bruised sternum.
         //Mars may be a 1/3G, but the atmosphere is thinner, so it would fall 5 times faster.
-        Assert.assertEquals(Vehicle.DEAD, okay);  //changed from "CRASHED" to "DEAD".
+        Assert.assertEquals(Vehicle.DEAD, okay);  //Changed from "CRASHED" to "DEAD".
     }
 
     @Test
